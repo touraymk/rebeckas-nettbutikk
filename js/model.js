@@ -1,0 +1,98 @@
+const model = {
+  app: {
+    page: "main",
+  },
+  input: {
+    searchField: {
+      inputSearch: "",
+    },
+    logIn: {
+      username: "",
+      password: "",
+    },
+    createProducts: {
+      id: null,
+      productImg: "",
+      productAlbum: [],
+      productName: "",
+      colorAlt: "",
+      yarnTypes: "",
+      sizes: [],
+      category: "",
+      quantity: null,
+      productInfo: "",
+    },
+    designer: {
+      product: "",
+      pattern: "",
+      yarn: [],
+      color: [],
+      size: "",
+    },
+    shoppingCart: {
+      products: [],
+      number: null,
+      productPrice: null,
+      amount: null,
+    },
+    customerCheckout: {
+      name: "",
+      email: "",
+      phoneNumber: null,
+      address: "",
+      postalCode: null,
+      cardNumber: null,
+      cvc: null,
+    },
+    assortment: {
+      yarn: {
+        type: "",
+        color: "",
+      },
+      pattern: {
+        name: "",
+        patternImg: "",
+      },
+    },
+  },
+  data: {
+    createProducts: [
+      {
+        id: 0,
+        productImg: "",
+        productAlbum: [],
+        productName: "Seven Sisters - genser",
+        colorAlt: "",
+        yarnTypes: "",
+        sizes: [],
+        category: "",
+        quantity: null,
+        productInfo: "",
+      },
+      {
+        id: 1,
+        productImg: "",
+        productAlbum: [],
+        productName: "",
+        colorAlt: "",
+        yarnTypes: "",
+        sizes: [],
+        category: "",
+        quantity: null,
+        productInfo: "",
+      },
+      {
+        id: null,
+        productImg: "",
+        productAlbum: [],
+        productName: "",
+        colorAlt: "",
+        yarnTypes: "",
+        sizes: [],
+        category: "",
+        quantity: null,
+        productInfo: "",
+      },
+    ],
+  },
+};
