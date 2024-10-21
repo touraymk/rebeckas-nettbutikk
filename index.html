@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebeckas Nettbutikk</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div id="app"></div>
+
     <script src="js/model.js"></script>
-    <script src="js/view.js"></script>
     <script src="js/common.js"></script>
 
     <script src="js/main/mainView.js"></script>
@@ -29,5 +29,19 @@
 
     <script src="js/addProducts/addProductsView.js"></script>
     <script src="js/addProducts/addProductsController.js"></script>
+
+    <script>
+      updateView();
+
+      function updateView() {
+        const page = model.app.page;
+
+        if (page === "main") updateViewMain();
+        else if (page === "logIn") updateViewLogIn();
+        else if (page === "overview") updateViewOverview();
+        else if (page === "productSite") updateViewProduct();
+        else if (page === "addProducts") updateViewAdd();
+      }
+    </script>
   </body>
 </html>

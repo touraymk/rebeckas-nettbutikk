@@ -1,6 +1,6 @@
 const model = {
   app: {
-    page: "main",
+    page: "main", //"logIn", "overview", "productSite", "addProducts"
     isAdmin: false,
   },
   input: {
