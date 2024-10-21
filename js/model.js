@@ -60,35 +60,34 @@ const model = {
       username: "rebecka",
       password: "1234",
     },
-    
-    yarn:
-      [
-        {
-          id: 0,
-          type: "Alpakka",
-          yarnImg: "source/img/alpakka.jpg",
-        },
-        {
-          id: 1,
-          type: "Mohair",
-          yarnImg: "source/img/mohair.jpg",
-        },
-        {
-          id: 2,
-          type: "Ull",
-          yarnImg: "source/img/ull.jpg",
-        },
-        {
-          id: 3,
-          type: "Bomull",
-          yarnImg: "source/img/bomull.jpg",
-        },
-        {
-          id: 4,
-          type: "Merinoull",
-          yarnImg: "source/img/merinoull.jpg",
-        },
-      ],
+
+    yarn: [
+      {
+        id: 0,
+        type: "Alpakka",
+        yarnImg: "source/img/alpakka.jpg",
+      },
+      {
+        id: 1,
+        type: "Mohair",
+        yarnImg: "source/img/mohair.jpg",
+      },
+      {
+        id: 2,
+        type: "Ull",
+        yarnImg: "source/img/ull.jpg",
+      },
+      {
+        id: 3,
+        type: "Bomull",
+        yarnImg: "source/img/bomull.jpg",
+      },
+      {
+        id: 4,
+        type: "Merinoull",
+        yarnImg: "source/img/merinoull.jpg",
+      },
+    ],
 
     colorAlt: [
       {
