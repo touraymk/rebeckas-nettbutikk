@@ -56,55 +56,67 @@ const model = {
     },
   },
   data: {
-    yarn: {
-      id: 0,
-      type: "Alpakka",
-      yarnImg: "source/img/alpakka.jpg",
+    admin: {
+      username: "rebecka",
+      password: "1234",
     },
-    yarn: {
-      id: 1,
-      type: "Mohair",
-      yarnImg: "source/img/mohair.jpg",
-    },
-    yarn: {
-      id: 2,
-      type: "Ull",
-      yarnImg: "source/img/ull.jpg",
-    },
-    yarn: {
-      id: 3,
-      type: "Bomull",
-      yarnImg: "source/img/bomull.jpg",
-    },
-    yarn: {
-      id: 4,
-      type: "Merinoull",
-      yarnImg: "source/img/merinoull.jpg",
-    },
-    colorAlt: {
-      id: 0,
-      color: "Rosa",
-    },
-    colorAlt: {
-      id: 1,
-      color: "Lilla",
-    },
-    colorAlt: {
-      id: 2,
-      color: "Blå",
-    },
-    colorAlt: {
-      id: 3,
-      color: "Grønn",
-    },
-    colorAlt: {
-      id: 4,
-      color: "Oransje",
-    },
-    colorAlt: {
-      id: 5,
-      color: "Gul",
-    },
+    
+    yarn:
+      [
+        {
+          id: 0,
+          type: "Alpakka",
+          yarnImg: "source/img/alpakka.jpg",
+        },
+        {
+          id: 1,
+          type: "Mohair",
+          yarnImg: "source/img/mohair.jpg",
+        },
+        {
+          id: 2,
+          type: "Ull",
+          yarnImg: "source/img/ull.jpg",
+        },
+        {
+          id: 3,
+          type: "Bomull",
+          yarnImg: "source/img/bomull.jpg",
+        },
+        {
+          id: 4,
+          type: "Merinoull",
+          yarnImg: "source/img/merinoull.jpg",
+        },
+      ],
+
+    colorAlt: [
+      {
+        id: 0,
+        color: "Rosa",
+      },
+      {
+        id: 1,
+        color: "Lilla",
+      },
+      {
+        id: 2,
+        color: "Blå",
+      },
+      {
+        id: 3,
+        color: "Grønn",
+      },
+      {
+        id: 4,
+        color: "Oransje",
+      },
+      {
+        id: 5,
+        color: "Gul",
+      },
+    ],
+
     products: [
       {
         id: 0,
