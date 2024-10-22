@@ -9,7 +9,7 @@ function topNavBar() {
   let html = /*HTML*/ `
   <div class="topNavBarContainer">
   <img style="width: 100px; height: 100px;" src="source/img/alpakka.jpg">
-  <input id="input1" class="input1" type="text">
+  <input id="input1" class="searchNavBar" type="text">
   <div><p class="hover">Handlekurv</p></div>
   <div><p class="hover">Logg Inn</p></div>
   </div>
