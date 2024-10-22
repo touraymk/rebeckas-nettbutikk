@@ -2,7 +2,7 @@ const app = document.getElementById("app");
 
 const model = {
   app: {
-    page: "main", //"logIn", "overview", "productSite", "addProducts"
+    page: "addProducts", //"logIn", "overview", "productSite", "addProducts"
     isAdmin: false,
   },
   input: {
