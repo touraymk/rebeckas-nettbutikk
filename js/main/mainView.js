@@ -1,3 +1,1 @@
-function updateViewMain() {
-  showNavBar();
-}
+function updateViewMain() {}

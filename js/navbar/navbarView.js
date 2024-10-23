@@ -1,9 +1,14 @@
 function showNavBar() {
-  document.getElementById("app").innerHTML = /*HTML*/ ` 
+  let html = "";
+  html += /*HTML*/ ` 
  ${topNavBar()}
  ${bottomNavBar()}
  `;
+  app.innerHTML = html;
+  return html;
 }
+
+let loginVar = "Logg Inn";
 
 function topNavBar() {
   let html = /*HTML*/ `
@@ -11,7 +16,7 @@ function topNavBar() {
   <img style="width: 100px; height: 100px;" src="source/img/alpakka.jpg">
   <input id="searchNavBar" class="searchNavBar" type="text">
   <div><p class="hover">Handlekurv</p></div>
-  <div><p class="hover">Logg Inn</p></div>
+  <div><p onclick="model.app.page = 'logIn'; updateView();" class="hover">${loginVar}</p></div>
   </div>
   `;
 
@@ -28,5 +33,17 @@ function bottomNavBar() {
   <div><p onclick="model.app.page = 'addProducts'; updateView();" class="hover">Om Meg</p></div>
   </div>
     `;
+  return html;
+}
+
+function showAdminNavBar() {
+  let html = /*HTML*/ `
+  <div class="bottomNavBarContainer">
+  <div><p onclick="model.app.page = 'Sortiment'; updateView();" class="hover">Sortiment</p></div>
+  <div><p onclick="model.app.page = 'addProducts'; updateView();" class="hover">Legg til Produkt</p></div>
+  </div>
+    `;
+
+  app.innerHTML += html;
   return html;
 }

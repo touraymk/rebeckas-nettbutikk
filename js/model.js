@@ -2,7 +2,7 @@ const app = document.getElementById("app");
 
 const model = {
   app: {
-    page: "addProducts", //"logIn", "overview", "productSite", "addProducts"
+    page: "main", //"logIn", "overview", "productSite", "addProducts"
     isAdmin: false,
   },
   input: {
@@ -13,16 +13,21 @@ const model = {
       username: "",
       password: "",
     },
-    createProducts: {
-      productImg: "",
-      productAlbum: [],
+    createProduct: {
       productName: "",
       colorAlt: "",
       yarnTypes: "",
-      sizes: [],
       category: "",
       quantity: null,
       productInfo: "",
+    },
+    productAlbum: {
+      id: null,
+      image: "",
+    },
+    sizes: {
+      id: null,
+      size: "",
     },
     designer: {
       product: "",
@@ -59,7 +64,7 @@ const model = {
   },
   data: {
     admin: {
-      username: "rebecka",
+      username: "Rebecka",
       password: "1234",
     },
 
@@ -117,18 +122,18 @@ const model = {
         color: "Gul",
       },
     ],
-
+    //Fjernet productImage og flyttet størrelse og productAlbum ut av objektet createProduct
     products: [
       {
         id: 0,
-        productImg: "source/img/seven-sister-genser.png",
         productAlbum: [
+          "source/img/seven-sister-genser.png",
           "source/img/seven-sisters1.png",
           "source/img/seven-sisters2.png",
           "source/img/seven-sisters3.png",
         ],
         productName: "Seven Sisters - genser",
-        sizes: ["s", "m", "l"],
+        //sizes: ["s", "m", "l"],
         category: "Genser",
         quantity: 2,
         productInfo:
@@ -136,8 +141,8 @@ const model = {
       },
       {
         id: 1,
-        productImg: "source/img/bobbie-genser.jpg",
         productAlbum: [
+          "source/img/bobbie-genser.jpg",
           "source/img/bobbie-genser1.jpg",
           "source/img/bobbie-genser2.jpg",
           "source/img/bobbie-genser3.jpg",

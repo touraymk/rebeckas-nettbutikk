@@ -1,7 +1,7 @@
 function updateViewAdd() {
   updateViewAdd();
   function updateViewAdd() {
-    app.innerHTML = /*html*/ ` 
+    app.innerHTML += /*html*/ ` 
         <div class="create-container">             
           <div>
             <input type="file" onchange="readFile(this)"/>
@@ -36,49 +36,48 @@ function drawInput() {
     <label for="pName">Produkt navn:</label>
     <input type="text" placeholder="produktnavn" id="pName"
     onchange="model.input.createProducts.productName=this.value"
-    value="${model.input.createProducts.productName || ""}" />
+     />
   </div>
   
   <div>
     <label for="pColor">Farge:</label>
     <input type="text" placeholder="farge alternativ" id="pColor"
     onchange="model.input.createProducts.colorAlt=this.value"
-    value="${model.input.createProducts.colorAlt || ""}" />
+     />
   </div>    
   
   <div>
     <label for="pYarn">Garntype:</label>
     <input type="text" placeholder="garntype" id="pYarn"
     onchange="model.input.createProducts.yarnTypes=this.value"
-    value="${model.input.createProducts.yarnTypes || ""}" />
+     />
   </div>  
 
   <div>
     <label for="pSize">Størrelse:</label>
     <input type="text" placeholder="størrelse" id="pSize"
     onchange="model.input.createProducts.size=this.value"
-    value="${model.input.createProducts.size || ""}" />
+     />
   </div>  
 
   <div>
     <label for="pCategory">Kategori:</label>
     <input type="text" placeholder="kategori" id="pCategory"
     onchange="model.input.createProducts.category=this.value"
-    value="${model.input.createProducts.category || ""}" />
+     />
   </div>
 
   <div>
     <label for="pQuantity">Antall:</label>
     <input type="number" placeholder="antall" id="pQuantity"
     onchange="model.input.createProducts.quantity=this.value"
-    value="${model.input.createProducts.quantity || ""}" />
+    />
   </div>
   
   <div>
     <label for="pInfo">Produkt info:</label>
     <input type="text" placeholder="produkt info" id="pInfo"
     onchange="model.input.createProducts.productInfo=this.value"
-    value="${model.input.createProducts.productInfo || ""}" 
     style="height:50px; text-align: start;"/>
   </div>
   <div>
